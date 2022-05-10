@@ -13,15 +13,15 @@ df = pd.read_csv("avax.csv")
 
 # df1 = pd.DataFrame({
 
-#     "TB_base_volume": df['TB Base Volume'].head(10),
+#     "TB_base_volume": df['TB Base Volume'].head(40),
 
-#     "TB_quote_volume": df['TB Quote Volume'].head(10)
+#     "TB_quote_volume": df['TB Quote Volume'].head(40)
 
 # })
 
-# print(df['TB Base Volume'].head(10))
+# # print(df['TB Base Volume'].head(10))
 
-# print(df['TB Quote Volume'].head(10))
+# # print(df['TB Quote Volume'].head(10))
 
 # df1.to_csv('sample1.csv')
 
