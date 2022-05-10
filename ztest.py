@@ -45,7 +45,7 @@ mean2 = df['TB Base Volume'].mean()
 
 std1 = df['TB Base Volume'].std()
 
-stderr1 = std1/sqrt(10)
+stderr1 = std1/sqrt(40)
 
 
 t = (mean1-mean2)/(stderr1)
