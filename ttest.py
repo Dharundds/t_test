@@ -29,13 +29,14 @@ df = pd.read_csv("avax.csv")
 # ----------------------------------------------------------------------------------------------
 
 
-# T Test calculations
+# Z Test calculations
 
 df1 = pd.read_csv("sample1.csv")
+alpha = 0.05
 
-alpha = 0.5
-
-degreeOfFreedom = 10-1
+print("Statistical hypothesis:")
+print("\tH0: u is from the large population")
+print("\tH1: u is not from the large population")
 
 mean1 = df1['TB_base_volume'].mean()
 
@@ -49,12 +50,9 @@ stderr1 = std1/sqrt(10)
 
 t = (mean1-mean2)/(stderr1)
 
+print("Conclusion:")
+if t < 1.96 and t > -1.96:
 
-if t < 2.262 and t > -2.262:
-
-    print("retain H0, this sample is from the large population")
-
-
+    print("\tretain H0, this sample is from the large population")
 else:
-
-    print("reject H0,this sample is not from the large population")
+    print("\treject H0,this sample is not from the large population")
